@@ -89,11 +89,55 @@
 
   gtag('config', 'UA-117895423-2');
 </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+        .loader {
+          display: block;
+        }
+        .loader-msg1 {
+          font-weight: normal;
+          font-family: OpenSans;
+          text-align: center;
+          padding-top: 50px;
+          margin-bottom: 0;
+        }
+        .loader-msg2 {
+          font-weight: normal;
+          font-family: OpenSans;
+          text-align: center;
+          padding-top: 10px;
+          margin-top: 10px;
+        }
+        .loader-img {
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+                  border-top: 16px solid #3498db;
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 2s linear infinite; /* Safari */
+          animation: spin 2s linear infinite;
+          margin: auto;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+
+        </style>   
     
-    {% block meta %}
+  {% block meta %}
     {% endblock %}
 
-</head>
+
+  </head>
 
 <body style="background-image:url("https://datasciencedojo.com/wp-content/uploads/DSC_6385_2_1920-3.png");background-color: #cccccc;">
 
